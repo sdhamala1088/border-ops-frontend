@@ -135,7 +135,7 @@ function TravelersPage() {
                             type="text"
                             value={passportNumber}
                             onChange={(e) => setPassportNumber(e.target.value)}
-                            style={{ width: "100%", padding: "0.25rem" }}
+                            style={{ width: "100%", padding: "0.37rem 0.25rem" }}
                             required
                         />
                     </label>
@@ -145,7 +145,7 @@ function TravelersPage() {
                     <button
                         type="submit"
                         style={{
-                            padding: "0.5rem 1rem",
+                            padding: "0.4rem 1rem",
                             cursor: "pointer",
                         }}
                     >

@@ -118,7 +118,17 @@ function PortPage() {
                         />
                     </label>
                 </div>
-
+                <div style={{ display: "flex", alignItems: "flex-end" }}>
+                    <button
+                        type="submit"
+                        style={{
+                            padding: "0.5rem 1rem",
+                            cursor: "pointer",
+                        }}
+                    >
+                        Create Port
+                    </button>
+                </div>
             </form>
 
             {loading && <p>Loading Ports...</p>}

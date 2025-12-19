@@ -10,7 +10,7 @@ function App() {
         display: "flex",
         gap: "1rem",
         padding: "1rem",
-        background: "#f3f3f3",
+        background: "#f3f3f3ff",
         marginBottom: "1rem",
       }}>
         <Link to="/">Travelers</Link>
