@@ -181,13 +181,13 @@ function TravelersPage() {
                         <tbody>
                             {travelers.map((t) => (
                                 <tr key={t.id}>
-                                    <td style={{ padding: "0.5rem" }}>{t.id}</td>
-                                    <td style={{ padding: "0.5rem" }}>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{t.id}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>
                                         {t.firstName} {t.lastName}
                                     </td>
-                                    <td style={{ padding: "0.5rem" }}>{t.nationality}</td>
-                                    <td style={{ padding: "0.5rem" }}>{t.dateOfBirth}</td>
-                                    <td style={{ padding: "0.5rem" }}>{t.passportNumber}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{t.nationality}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{t.dateOfBirth}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{t.passportNumber}</td>
                                 </tr>
                             ))}
                         </tbody>

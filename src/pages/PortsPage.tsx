@@ -33,7 +33,7 @@ function PortPage() {
 
     const handleCreate = async (e: FormEvent) => {
         try {
-
+            e.preventDefault();
             setError(null);
 
             const port: NewPort = {
@@ -151,13 +151,13 @@ function PortPage() {
                         <tbody>
                             {ports.map((port) => (
                                 <tr key={port.id}>
-                                    <td style={{ padding: "0.5rem" }}>{port.id}</td>
-                                    <td style={{ padding: "0.5rem" }}>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{port.id}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>
                                         {port.name}
                                     </td>
-                                    <td style={{ padding: "0.5rem" }}>{port.country}</td>
-                                    <td style={{ padding: "0.5rem" }}>{port.state}</td>
-                                    <td style={{ padding: "0.5rem" }}>{port.code}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{port.country}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{port.state}</td>
+                                    <td style={{ padding: "0.5rem", textAlign: "left" }}>{port.code}</td>
                                 </tr>
                             ))}
                         </tbody>

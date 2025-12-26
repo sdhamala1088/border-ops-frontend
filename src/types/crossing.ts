@@ -12,5 +12,5 @@ export interface Crossing {
     notes?: string | null;
 }
 
-type Direction = "ENTRY" | "EXIT";
-type Mode = "VEHICLE" | "PEDESTRIAN" | "AIR" | "SEA";
+export type Direction = "ENTRY" | "EXIT";
+export type Mode = "VEHICLE" | "PEDESTRIAN" | "AIR" | "SEA";

@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom"
 import './App.css'
 import TravelersPage from './pages/TravelersPage'
 import PortPage from "./pages/PortsPage"
+import CrossingsPage from "./pages/CrossingsPage"
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
       }}>
         <Link to="/">Travelers</Link>
         <Link to="/ports">Ports of Entry</Link>
+        <Link to="/crossings">Crossings</Link>
       </nav>
       <Routes>
         <Route path="/" element={<TravelersPage />} />
         <Route path="/ports" element={<PortPage />} />
+        <Route path="/crossings" element={<CrossingsPage />} />
       </Routes>
     </div>
   )

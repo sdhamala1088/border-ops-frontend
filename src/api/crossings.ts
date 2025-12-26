@@ -29,4 +29,4 @@ export async function postCrossing(newCrossing: NewCrossing) {
     return response.data;
 }
 
-export type NewCrossing = Omit<Crossing, "id">;
+export type NewCrossing = Omit<Crossing, "id" | "travelerName" | "portCode" | "portName">;
